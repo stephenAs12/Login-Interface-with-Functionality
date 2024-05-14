@@ -1,0 +1,55 @@
+
+#box
+{
+    position: relative;
+    /* max-width: 600px; */
+    /* padding: 10px; */
+    margin-top: -85px;
+    background: rgb(255, 255, 255, 0.8);
+    box-shadow: 0 5px 15px rgb(0, 0, 0, 2);
+    border-radius: 5px;
+}
+#box h5{
+    min-height: 45px;
+    padding-left: 10px;
+    text-align: left;
+    color: #000000;
+}
+#box p{
+    /* margin: 0 0 20px; */
+    padding-right: 10px;
+    text-align: right;
+    color: #000000;
+}
+@media(max-width:767px){
+    .position_change{
+        padding: 0px;
+        margin: 0px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+hr.last_hr{
+    border: 10px solid green;
+  border-radius: 5px;
+}
+.anyClass {
+    max-width: 100px;
+    overflow-x: scroll;
+  }
+  @media screen and (max-width: 540px) {
+    .scroll {
+        width: 400px;
+    }
+}
+  div.scroll {
+      margin: 4px, 4px;
+      padding: 4px;
+      width: 70vw;
+      overflow-x: auto;
+      overflow-y: hidden;
+      white-space: nowrap;
+  }
+  ::-webkit-scrollbar{
+    display: none;
+}

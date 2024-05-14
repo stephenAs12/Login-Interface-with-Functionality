@@ -1,0 +1,87 @@
+
+#box
+{
+    position: relative;
+    /* max-width: 600px; */
+    /* padding: 10px; */
+    margin-top: -85px;
+    background: rgb(255, 255, 255, 0.8);
+    box-shadow: 0 5px 15px rgb(0, 0, 0, 2);
+    border-radius: 5px;
+}
+#box h5{
+    min-height: 45px;
+    padding-left: 10px;
+    text-align: left;
+    color: #000000;
+}
+#box p{
+    /* margin: 0 0 20px; */
+    padding-right: 10px;
+    text-align: right;
+    color: #000000;
+}
+@media(max-width:767px){
+    .position_change{
+        padding: 0px;
+        margin: 0px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+hr.last_hr{
+    border: 10px solid green;
+  border-radius: 5px;
+}
+.anyClass {
+    max-width: 100px;
+    overflow-x: scroll;
+  }
+  @media screen and (max-width: 540px) {
+    .scroll {
+        width: 400px;
+    }
+}
+  div.scroll {
+      margin: 4px, 4px;
+      padding: 4px;
+      width: 70vw;
+      overflow-x: auto;
+      overflow-y: hidden;
+      white-space: nowrap;
+  }
+::-webkit-scrollbar{
+    display: none;
+}
+.add_file button{
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgb(0, 0, 0, 2);
+    align-items: center;
+}
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+.inputfile + label {
+    font-size: 1.25em;
+    font-weight: 700;
+    color: white;
+    background-color: black;
+    display: inline-block;
+}
+
+.inputfile:focus + label,
+.inputfile + label:hover {
+    background-color: red;
+}
+.inputfile + label {
+	cursor: pointer; /* "hand" cursor */
+}
+.inputfile:focus + label {
+	outline: 1px dotted #000;
+	outline: -webkit-focus-ring-color auto 5px;
+}
